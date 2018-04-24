@@ -1,0 +1,28 @@
+Tehtävä 1
+a) h1pcap
+b) 11 pakettia
+
+Tehtävä 2
+a) h2pcap
+b) paketit lähes tuplaantui (11 -> 21)
+c) 21 pakettia
+
+Tehtävä 3
+a) 3 GET
+b) 130.234.10.207 ja 10.96.135.200
+c) Paketit tulevat peräkkäin
+d) h3pcap
+
+Tehtävä 4
+a) 401 ja "Authorization Required for ITKP104 password test"
+b)
+- "ITKP104 Tietoverkot"
+- Basic access authentication
+- Base64-menetelmä
+c) h4pcap
+d) Anonymous, Digest, NTLM, Negotiate, Windows Live ID
+	lähde: https://docs.microsoft.com/en-us/dotnet/framework/wcf/feature-details/understanding-http-authentication
+
+Tehtävä 5
+a) h5pcap
+b) 46. Yritettiin pari kertaa. Käyttöjärjestelmänä Windows 10;  Putty'n Telnet.
