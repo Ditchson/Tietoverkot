@@ -26,3 +26,102 @@ d) Anonymous, Digest, NTLM, Negotiate, Windows Live ID
 Tehtävä 5
 a) h5pcap
 b) 46. Yritettiin pari kertaa. Käyttöjärjestelmänä Windows 10;  Putty'n Telnet.
+
+Tehtävä 6
+a) h6pcap
+
+Tehtävä 7
+a) h7pcap
+
+Lähetetty viesti:
+	GET / HTTP/1.1\r\n
+	host: www.example.com\r\n
+	If-Modified-Since: Mon, 23 Oct 2018 19:43:31 GMT\r\n
+	\r\n
+
+Tehtävä 8
+a) h8pcap
+b) h8bpcap
+c)
+	non-persistentissä on enemmän HTTP-protokolla kutsuja.
+
+d) h8cpcap
+
+Tehtävä 9
+a) h9apcap
+b) h9bpcap
+c)
+	A:ssa sertifikaatti on kunnossa.
+	B:ssa tulee "encrypted alert", ja lopettaa kaappauksen.
+
+Tehtävä 10
+a)
+
+TCP-Palvelin:
+	[127.0.0.1:54921]: HELO vieras
+	[127.0.0.1:54921]: MAIL FROM: vieras
+	[127.0.0.1:54921]: RCPT TO: palvelin
+	[127.0.0.1:54921]: DATA
+	[127.0.0.1:54921]: [sähköposti]
+	tähän tulee viesti.
+	.
+	[/sähköposti]
+	[127.0.0.1:54921]: QUIT
+---------------------------------------------------------
+	(14:58:24) Uusi asiakas: 127.0.0.1 portista: 54921
+	(15:14:51) Lopetti asiakas: 127.0.0.1 portista: 54921
+
+TCP-Asiakas:
+	Yhdistetään...
+	Connected to localhost (127.0.0.1) port: 25000
+	220 ITKP104 Postipalvelin Fri May 04 14:58:24 EEST 2018 
+	>>> HELO vieras\r\n
+	250 ITKP104 Postipalvelin HELO 127.0.0.1[127.0.0.1], good to see you! 
+	>>> MAIL FROM: vieras
+	>>> \r\n
+	250 2.1.0 Sender...  vieras you are ok
+	>>> RCPT TO: palvelin\r\n
+	250 2.1.5 Recipient...  palvelin is ok!
+	>>> DATA\r\n
+	354 Enter mail, end with "." on a line by itself
+	>>> tähän tulee viesti
+	>>> .
+	>>> \r\n
+	>>> .\r\n
+	250 2.0.0 Message displayed on Server screen.
+	>>> QUIT\r\n
+	221 2.0.0 ITKP104 Postipalvelin sulkeepi yhteyden...
+
+
+Tehtävä 11
+	Yhdistetään...
+	Connected to ftp.fi.debian.org (130.230.54.99) port: 21
+	220 (vsFTPd 2.2.2)
+	>>> USER anonymous\r\n
+	331 Please specify the password.
+	>>> PASS anonymous\r\n
+	230 Login successful.
+	>>> EPSV\r\n
+	229 Entering Extended Passive Mode (|||53248|)
+	>>> LIST\r\n
+	150 Here comes the directory listing.
+	226 Directory send OK.
+	>>> EPSV\r\n
+	229 Entering Extended Passive Mode (|||51943|)
+	>>> RETR README.html\r\n
+	150 Opening BINARY mode data connection for README.html (1298 bytes).
+	226 Transfer complete.
+	>>> QUIT\r\n
+	221 Goodbye.
+	Disconnected from server ftp.fi.debian.org (130.230.54.99) port: 21
+
+
+
+
+
+
+
+
+
+
+
