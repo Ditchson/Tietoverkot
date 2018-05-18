@@ -115,11 +115,44 @@ Tehtävä 11
 	221 Goodbye.
 	Disconnected from server ftp.fi.debian.org (130.230.54.99) port: 21
 
+Tehtävät 12
+a)
+- Seq = 2793918778
+- Seq = 179396585, ACK = 2793918779
+- Seq = 2793918779, ACK = 179396586
+b)
+- MSS = 1460 Tai MSS = 1363
+- WS = 256 Tai WS = 128
+c) 288 POST /ethereal-labs/lab3-1-reply.htm HTTP/1.1
+d) Sekvenssien määrä kasvaa graafissa kasvaa ekspotentiaalisesti. Ruuhkanhallintana on TCP Slow Start
 
+Tehtävä 13
+a) Protokolla on ICMP, ja se viestii reply/request echo'illa. (h13pcap)
+b) 996 on suurin sallittu
+c) ensimmäinen reititin ei hyväksy fragmentointia...
 
+Tehtävä 14
+a) ICMP, Internet Control Message Protocol
+b) 106 Echo (ping) request
+c) Vastaavat samalla ICMP protokollalla, ja viestinä on 106 Echo (ping) reply 
+d) h14pcap
 
+Tehtävä 15
+a) h14pcap
+b) 0.0.0.0 -> 255.255.255.255
+c) UDP
+d) Lähdeportti 68, Kohdeportti 67
 
+Tehtävä 16
+a) UDP
+b) query lähetetään 53 porttiin, ja response tulee 53 portista
+c) Ei haeta
+d) h16pcap
 
+Tehtävä 17
+a) ensimmäinen viesti on "who has 10.96.128.1? Tell 10.96.151.36"
+	ja seuraava viestitys on "10.96.151.36 is at 00.00.0c:07:ac:01"
+b) h17pcap
 
 
 
